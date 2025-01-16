@@ -10,10 +10,6 @@ conexao = mysql.connector.connect(
     database = 'trabalhoFinal',
 )
 
-# if conexao.is_connected():
-#     print("Conexão realizada com sucesso!")
-# else:
-#     print("Erro ao conectar ao banco de dados.")
 
 def vazio(dado):
     if dado == "":
@@ -126,15 +122,6 @@ def menu_clientes():
                     vazio(senha)
                     cpf = input("Informe o novo cpf do cliente: ")
                     vazio(cpf)
-                    # if cpf != None:
-                    #     while True:
-                    #         try:
-                    #             cpf = input('Digite o CPF: ')
-                    #             verificar_cpf(cpf)  # Verifica se o CPF é válido
-                    #             print("CPF válido!")  # Se o CPF for válido, sai do laço
-                    #             break  # Encerra o laço e segue para o restante do cadastro
-                    #         except ValueError as e:
-                    #             print(f"Erro: {e}. Tente novamente.")
                     primeiro_nome = input("Informe o novo primeiro nome do cliente: ")
                     vazio(primeiro_nome)
                     sobrenome = input("Informe o novo sobrenome do cliente: ")
